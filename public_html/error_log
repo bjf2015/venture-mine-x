@@ -1,0 +1,8 @@
+[02-May-2015 18:28:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'auctions.ventures' doesn't exist' in /home/mjacsullivan/public_html/app/datastore/Worker.php:1
+Stack trace:
+#0 /home/mjacsullivan/public_html/app/datastore/Worker.php(1): PDOStatement->execute()
+#1 /home/mjacsullivan/public_html/app/ventures/Ventures.php(1): Worker->query_bind('SELECT * FROM v...', Array)
+#2 /home/mjacsullivan/public_html/index.php(46): Ventures->get_ventures()
+#3 {main}
+  thrown in /home/mjacsullivan/public_html/app/datastore/Worker.php on line 1
+[10-Sep-2015 02:44:07 UTC] PHP Fatal error:  Call to a member function get_email() on a non-object in /home/mjacsullivan/public_html/app/bids/Bids.php on line 1

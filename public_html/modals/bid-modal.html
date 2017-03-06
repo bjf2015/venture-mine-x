@@ -1,0 +1,58 @@
+<div class="modal fade bid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <br>
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#bid" data-toggle="tab"><b>Get shares</b></a></li>
+                    <li class=""><a href="#why" data-toggle="tab"><b>Why?</b></a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger" id="error-box-wrapper" role="alert" style="display: none;">
+                    <strong>Oh snap!</strong> <div id="error-box">Change a few things up and try submitting again.</div>
+                </div>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in" id="why">
+                        <p>With these shares you can put information here...</p>
+                    </div>
+                    <div class="tab-pane fade active in" id="bid">
+                        <form class="form-horizontal" id="bidform">
+                            <fieldset>
+                                <!-- Text input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="price">Price per share:</label>
+                                    <div class="controls">
+                                        <input type="number" min="0" max="0" required="true" size="30" id="price" class="form-control" placeholder="Price">
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="amount">Amount of shares:</label>
+                                    <div class="controls">
+                                        <input type="number" required="true" size="30" id="amount" class="form-control" placeholder="Amount">
+                                    </div>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="control-group">
+                                    <label class="control-label" for="signin-button"></label>
+                                    <div class="controls">
+                                        <button id="signin-button" class="btn btn-success">Bid</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div style="display:table-cell;">
+                    <div style="margin-left:auto;margin-right:auto;">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
